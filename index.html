@@ -51,7 +51,7 @@ window.open(linkToOpen);
 Torrent page:
 
 <br>
-<input type="text" name="textbox1" id="textbox1" />
+<input type="text" name="textbox1" id="textbox1" onClick="this.select();"/>
 <input type="submit" name="button" id="button1" onclick="edit()" value="Get URL" />
 <input type="submit" name="button" id="button2" onclick="cleanTextBox()" value="X" />
 <br>
@@ -60,7 +60,7 @@ Torrent page:
 The .torrent link is:
 
 <br>
-<input type="text" name="textbox2" id="textbox2" readonly="true"/>
+<input type="text" name="textbox2" id="textbox2" onClick="this.select();" readonly="true"/>
 <input type="submit" name="button" id="button3" onclick="openlink()" value="Download" />
 <br>
 
