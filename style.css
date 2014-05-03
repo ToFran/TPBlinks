@@ -30,7 +30,7 @@ a{
 
 #arrow{
 	position: relative;
-	top: -65px;
+	top: -64px;
 	opacity: 0.92;
 	display: none;
 	}
@@ -42,7 +42,14 @@ a{
 	font-size: 11px;
 	}
 
+#conteiner{
+	height: auto;
+	width: 550px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 #textbox1{width:400px;}
 
-#textbox2{width:440px; z-index: -1;}
+#textbox2{width:445px; z-index: -1;}
 
