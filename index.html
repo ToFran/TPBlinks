@@ -1,0 +1,70 @@
+<!-- Coded by ToFran -->
+<html> 
+<head> 
+<title>Convert TPB links</title>
+
+<style>
+body{background-color:#111111; color:#ffffff;}
+#textbox1{width:400px;}
+#textbox2{width:425px;}
+#footer{margin-left:400px;}
+</style>
+</head>
+
+<script type="text/javascript">
+//By ToFran
+
+function edit() { 
+	var entry= document.getElementById("textbox1").value;
+	//Remove spaces
+	var edit1 = entry.replace(" ", "");
+	//Remove  http://
+	var edit1 = entry.replace("http://", "");
+	//Remove "torrent/"
+	var edit2 = edit1.replace("torrent/", "");
+	//Add "torrents." and ".torrent"
+	var answer = "torrents." + edit2 + ".torrent"
+
+	var textbox2 = document.getElementById('textbox2');
+	textbox2.value = answer;
+} 
+
+function cleanTextBox(){
+	//alert();
+	document.getElementById("textbox1").value = '';
+}
+
+function openlink()
+{
+
+var link= document.getElementById("textbox2").value;
+var linkToOpen= "http://" + link;
+window.open(linkToOpen);
+}
+
+</script>
+
+<body> 
+<div align="center">
+
+<h3>Convert TPB links to .torrent file links</h3>
+Torrent page:
+
+<br>
+<input type="text" name="textbox1" id="textbox1" onClick="this.select();"/>
+<input type="submit" name="button" id="button1" onclick="edit()" value="Get URL" />
+<input type="submit" name="button" id="button2" onclick="cleanTextBox()" value="X" />
+<br>
+<br>
+
+The .torrent link is:
+
+<br>
+<input type="text" name="textbox2" id="textbox2" onClick="this.select();" readonly="true"/>
+<input type="submit" name="button" id="button3" onclick="openlink()" value="Download" />
+<br>
+
+<p id="footer">By ToFran</p>
+</div>
+</body>
+</html>
