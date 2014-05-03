@@ -7,8 +7,8 @@ function edit() {
 	var edit1 = entry.replace("http://", "");
 	//Remove "torrent/"
 	var edit2 = edit1.replace("torrent/", "");
-	//Add "torrents." and ".torrent"
-	var answer = "torrents." + edit2 + ".torrent"
+	//Add "http://torrents." and ".torrent"
+	var answer = "http://torrents." + edit2 + ".torrent"
 
 	var textbox2 = document.getElementById('textbox2');
 	textbox2.value = answer;
@@ -32,6 +32,6 @@ function cleanTextBox(){
 function openlink()
 {
 var link= document.getElementById("textbox2").value;
-var linkToOpen= "http://" + link;
-window.open(linkToOpen);
+// var linkToOpen= "http://" + link;
+window.open(link);
 }
