@@ -12,6 +12,9 @@ function edit() {
 
 	var textbox2 = document.getElementById('textbox2');
 	textbox2.value = answer;
+
+	document.getElementById('copyMe').style.display = "block";
+	document.getElementById('arrow').style.display = "block";
 } 
 
 function cleanTextBox(){

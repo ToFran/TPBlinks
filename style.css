@@ -10,24 +10,35 @@ a{
 	text-decoration: none;
 	}
 
-/*
+
 #copyMe{
 	position: relative;
-	top: -6px;
-	height: 20px;
+	top: -41px;
+	height: 18px;
 	width: 65px;
-	background-color: #0099CC;
+	background-color: #33B5E5;
 	border-radius:4px;
+	opacity: 0.92;
+	display: none;
 	}
-*/
 
 #copytext{
+	color: #ffffff;
 	margin-top: 0px;
 	font-size: 12px;
 	}
 
+#arrow{
+	position: relative;
+	top: -65px;
+	opacity: 0.92;
+	display: none;
+	}
+
 #footer{
-	margin-left:350px;
+	position: relative;
+	top: 0px;
+	left:180px;
 	font-size: 11px;
 	}
 
