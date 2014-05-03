@@ -10,5 +10,5 @@ Ex.:
  thepiratebay.se/torrent/00000000/TorrentFull_Name	>	torrents.thepiratebay.se/00000000/TorrentFull_Name.torrent
 
 
-Simple as that :P
+Simple as that!
 By ToFran
