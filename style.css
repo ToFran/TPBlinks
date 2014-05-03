@@ -1,0 +1,37 @@
+/*by ToFran*/
+
+body{
+	background-color:#111111; 
+	color:#ffffff;
+	}
+
+a{
+	color: #C2EBFF; 
+	text-decoration: none;
+	}
+
+/*
+#copyMe{
+	position: relative;
+	top: -6px;
+	height: 20px;
+	width: 65px;
+	background-color: #0099CC;
+	border-radius:4px;
+	}
+*/
+
+#copytext{
+	margin-top: 0px;
+	font-size: 12px;
+	}
+
+#footer{
+	margin-left:350px;
+	font-size: 11px;
+	}
+
+#textbox1{width:400px;}
+
+#textbox2{width:440px; z-index: -1;}
+

@@ -1,71 +1,31 @@
-<!-- Coded by ToFran -->
+<!-- by ToFran -->
 <html> 
-<head> 
-<title>Convert TPB links</title>
+	<head> 
+		<title>Convert TPB links</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
 
-<style>
-body{background-color:#111111; color:#ffffff;}
-a{color: #C2EBFF; text-decoration: none;}
-#textbox1{width:400px;}
-#textbox2{width:440px;}
-#footer{margin-left:350px; font-size: 11px;}
-</style>
-</head>
+	<body> 
+		<div align="center">
+			<h3>Convert TPB links to .torrent file links</h3>
+			Torrent page:
 
-<script type="text/javascript">
-//By ToFran
+			<br>
+			<input type="text" name="textbox1" id="textbox1" onClick="this.select();"/>
+			<input type="submit" name="button" id="button1" onclick="edit()" value="Get URL" />
+			<input type="submit" name="button" id="button2" onclick="cleanTextBox()" value="X" />
+			<br>
+			<br>
 
-function edit() { 
-	var entry= document.getElementById("textbox1").value;
-	//Remove spaces
-	var edit1 = entry.replace(" ", "");
-	//Remove  http://
-	var edit1 = entry.replace("http://", "");
-	//Remove "torrent/"
-	var edit2 = edit1.replace("torrent/", "");
-	//Add "torrents." and ".torrent"
-	var answer = "torrents." + edit2 + ".torrent"
+			The .torrent link is:
 
-	var textbox2 = document.getElementById('textbox2');
-	textbox2.value = answer;
-} 
+			<br>
+			<input type="text" name="textbox2" id="textbox2" onClick="this.select();" readonly="true"/>
+			<input type="submit" name="button" id="button3" onclick="openlink()" value="Get file" />
 
-function cleanTextBox(){
-	//alert();
-	document.getElementById("textbox1").value = '';
-}
-
-function openlink()
-{
-
-var link= document.getElementById("textbox2").value;
-var linkToOpen= "http://" + link;
-window.open(linkToOpen);
-}
-
-</script>
-
-<body> 
-<div align="center">
-
-<h3>Convert TPB links to .torrent file links</h3>
-Torrent page:
-
-<br>
-<input type="text" name="textbox1" id="textbox1" onClick="this.select();"/>
-<input type="submit" name="button" id="button1" onclick="edit()" value="Get URL" />
-<input type="submit" name="button" id="button2" onclick="cleanTextBox()" value="X" />
-<br>
-<br>
-
-The .torrent link is:
-
-<br>
-<input type="text" name="textbox2" id="textbox2" onClick="this.select();" readonly="true"/>
-<input type="submit" name="button" id="button3" onclick="openlink()" value="Get file" />
-<br>
-
-<p id="footer">By <b>Tofran</b>. View on <a href="https://github.com/ToFran/TPBlinks"><b>github</b></a></p>
-</div>
-</body>
+			<br>
+			<p id="footer">By <b>Tofran</b>. View on <a href="https://github.com/ToFran/TPBlinks" target="_blank"><b>github</b></a></p>
+		</div>
+	</body>
 </html>
