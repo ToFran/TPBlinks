@@ -4,9 +4,9 @@ function edit() {
 	//Remove spaces
 	var edit1 = entry.replace(" ", "");
 	//Remove  http://
-	var edit1 = entry.replace("http://", "");
+	var edit2 = edit1.replace("http://", "");
 	//Remove "torrent/"
-	var edit2 = edit1.replace("torrent/", "");
+	var edit3 = edit2.replace("torrent/", "");
 	//Add "http://torrents." and ".torrent"
 	var answer = "http://torrents." + edit2 + ".torrent";
 
