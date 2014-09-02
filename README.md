@@ -1,4 +1,4 @@
-[Discontinued] ToFranTPBlinks
+[Discontinued] TPBlinks
 ========
 
 [Discontinued]
