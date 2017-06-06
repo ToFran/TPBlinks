@@ -8,7 +8,7 @@ function edit() {
 	//Remove "torrent/"
 	var edit3 = edit2.replace("torrent/", "");
 	//Add "http://torrents." and ".torrent"
-	var answer = "http://torrents." + edit2 + ".torrent";
+	var answer = "http://torrents." + edit3 + ".torrent";
 
 	var textbox2 = document.getElementById('textbox2');
 	textbox2.value = answer;
